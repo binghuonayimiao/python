@@ -19,8 +19,9 @@ header ={
         "Referer": "http://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&ie=gb18030&word=%CD%BC%C6%AC&fr=ala&ala=1&alatpl=others&pos=0"
 }
 response = requests.get(page_url, headers = header)
+print(response.text)
 response.encoding = 'utf-8' # 防止页面乱码，可以通过‘charset’,查看页面编码格式
-html = response.text
+html = response.text5
 pattern = r'"thumbURL":"(.*?)"'
 urls = re.findall(pattern, html)
 print(urls)

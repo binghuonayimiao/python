@@ -45,6 +45,7 @@ class Spider():
 
     def go(self):
         html = self.__fetch_html()
+        print(html)
         self.__analysis(html)
         self.__refine()
         self.__sort()
