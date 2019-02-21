@@ -48,7 +48,7 @@ class Student(models.Model):
     # 如果没有models.AutoField，默认会创建一个id的自增列
     name = models.CharField(max_length=20)
  
-    # model的字符串表现形式
+    # model的字符串表现形式1
     def __unicode__(self):
         return self.name
  
