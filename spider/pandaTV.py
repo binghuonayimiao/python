@@ -40,7 +40,7 @@ class Spider():
         self.__class__.mydict.update(dict_new)
 
     def __sort(self):
-        # 因为字典无序，此处sorted将dict转为list
+        # 因为字典无序，此处sorted将dict转为list test
         self.__class__.mydict = sorted(self.__class__.mydict.items(), key=lambda item: item[1], reverse=True)
 
     def go(self):
